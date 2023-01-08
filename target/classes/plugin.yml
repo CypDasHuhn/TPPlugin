@@ -1,0 +1,22 @@
+name: TPPlugin
+version: 1.0
+main: de.CypDasHuhn.TpPl.main.Main
+api-version: 1.19
+
+commands:
+  ts:
+    description: ts
+  t:
+    description: t
+  tu:
+    description: tu
+  tg:
+    description: tg
+  td:
+    description: td
+  tl:
+    description: tl
+  tla:
+    description: tla
+  th:
+    description: th

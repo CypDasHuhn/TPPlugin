@@ -19,6 +19,7 @@ public class TabComp implements TabCompleter {
 		List <String> arguments = new ArrayList<String>();
 		FileConfiguration lConfig = cf[0].gfc("List", p.getUniqueId()+"");
 		// Set
+		//Einn unnötigern Kommentarn lol
 		switch (label) {
 			case "t":
 				if (args.length == 1) {

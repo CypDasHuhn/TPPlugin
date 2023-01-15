@@ -19,7 +19,6 @@ public class TabComp implements TabCompleter {
 		List <String> arguments = new ArrayList<String>();
 		FileConfiguration lConfig = cf[0].gfc("List", p.getUniqueId()+"");
 		// Set
-		//Einn unnötigern Kommentarn lol
 		switch (label) {
 			case "t":
 				if (args.length == 1) {
@@ -33,7 +32,7 @@ public class TabComp implements TabCompleter {
 				break;
 			case "tu":
 				if (args.length == 1) {
-					
+
 				}
 				break;
 			case "tg":
@@ -66,7 +65,6 @@ public class TabComp implements TabCompleter {
 		FileConfiguration lConfig = cf[0].gfc("List", directory);
 
 		int amount = lConfig.getInt("Location."+prefix+".ammount");
-		Bukkit.broadcastMessage(amount+"");
 		
 		for (int i = 1; i <= amount; i++) {
 			arguments.add(lConfig.getString("Location."+prefix+"."+i));

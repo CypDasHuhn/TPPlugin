@@ -30,7 +30,7 @@ public class RegisterLocation {
 		Location location = p.getLocation();
 		cConfig.set("Coordinates", location);
 		// Item //////////////////////////
-		cConfig.set("Item",Common.createItem(Material.GRASS_BLOCK, "�f"+name, false, null));
+		cConfig.set("Item",Common.createItem(Material.GRASS_BLOCK, "§f"+name, false, null));
 		
 		CustomFiles.saveArray(cf);
 		// Parent //////////////////////

@@ -23,14 +23,15 @@ public class CustomFiles {
 		customFile = YamlConfiguration.loadConfiguration(file);
 		return customFile;
 	}
-	
+
 	public void save() {
 		try {
-			customFile.save(file);
+			if (this.customFile != null){
+				customFile.save(file);
+			}
 		} catch (IOException e) {
-
+			throw new RuntimeException(e);
 		}
-
 	}
 
 	public static void saveArray(CustomFiles[] cf) {
@@ -38,11 +39,11 @@ public class CustomFiles {
 			customFile.save();
 		}
 	}
-	
+
 	public void reload() {
 		customFile = YamlConfiguration.loadConfiguration(file);
 	}
-	
+
 	public void delete(String name, String folder) {
 		file = new File(Bukkit.getServer().getPluginManager().getPlugin("TPPlugin").getDataFolder()+"/"+folder, name+".yml");
 		if (file.exists()) file.delete();
